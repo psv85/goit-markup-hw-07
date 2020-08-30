@@ -1,0 +1,55 @@
+.benefits {
+  padding-bottom: 0;
+
+  &-list {
+    display: flex;
+    align-items: baseline;
+  }
+  &-item {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+  }
+
+  &-title {
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.benefits-item::before {
+  display: block;
+  content: " ";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-item.item-details::before {
+  background-image: url("../img/icons/details.svg");
+}
+
+.benefits-item.item-punctual::before {
+  background-image: url("../img/icons/punctual.svg");
+}
+
+.benefits-item.item-planing::before {
+  background-image: url("../img/icons/planing.svg");
+}
+
+.benefits-item.item-technology::before {
+  background-image: url("../img/icons/technology.svg");
+}
+
+.benefits-title,
+.names {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: $dark-text-color;
+}

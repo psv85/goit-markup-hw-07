@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+
+  &-item {
+    position: relative;
+  }
+
+  &-item:not(last-child) {
+    margin-right: 50px;
+  }
+}
+
+.link-list {
+  display: flex;
+}
